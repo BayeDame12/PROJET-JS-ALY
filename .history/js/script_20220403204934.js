@@ -62,7 +62,7 @@ imagsup.addEventListener('click',()=>{
             main.setAttribute('class','main')
                 refresh()
                 
-
+                
     })
     annul.addEventListener('click',()=>{
 
@@ -413,6 +413,7 @@ const btnCorbeille=document.querySelector('#corbeille')
   
 })
             
+
 
 
 

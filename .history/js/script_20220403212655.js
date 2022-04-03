@@ -413,6 +413,12 @@ const btnCorbeille=document.querySelector('#corbeille')
   
 })
             
+sup.addEventListener('$(selector).click(function (e) { 
+    e.preventDefault();
+    
+});',()=>{
+
+})
 
 
 

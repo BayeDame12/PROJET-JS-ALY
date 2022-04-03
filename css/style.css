@@ -62,33 +62,39 @@ body{
 /* ----------------------------------------------
  * -----------------FOR THE TEXTE----------------------------- */
 .divCorbeille h2{
-    -webkit-animation:tracking-in-contract .19s cubic-bezier(.215,.61,.355,1.000) both;
-    animation:tracking-in-contract .8s cubic-bezier(.215,.61,.355,1.000) both}
+   
+    -webkit-animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 
-@-webkit-keyframes tracking-in-contract{
-    0%{letter-spacing:1em;opacity:0}
-    40%{opacity:.6}
-    100%{letter-spacing:normal;opacity:1}
-}@keyframes tracking-in-contract{
-    0%{letter-spacing:1em;opacity:0}
-    40%{opacity:.6}
-    100%{letter-spacing:normal;opacity:1}
 }
 
-.span1 h4{
-    -webkit-animation:tracking-in-contract .19s cubic-bezier(.215,.61,.355,1.000) both;
-    animation:tracking-in-contract .8s cubic-bezier(.215,.61,.355,1.000) both}
-
-@-webkit-keyframes tracking-in-contract{
-    0%{letter-spacing:1em;opacity:0}
-    40%{opacity:.6}
-    100%{letter-spacing:normal;opacity:1}
-}@keyframes tracking-in-contract{
-    0%{letter-spacing:1em;opacity:0}
-    40%{opacity:.6}
-    100%{letter-spacing:normal;opacity:1}
-}
-
+@-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  
 
 header span{
     position: absolute;
@@ -176,6 +182,7 @@ header span{
     border-radius: 10px;
 }
 .main-div111{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -377,12 +384,13 @@ padding: 0.5rem;
     position: absolute;
     flex-direction: column;
     align-items: center;
-    border:3px solid #9027c9;
+    border:1px solid #9027c9;
     opacity: 0,5;
     border-radius: 13px;
     flex: 0 0 15vw;
     height: 85%;
     width: 15%;
+    right: 0;
     margin-top: 15px;
     transition:padding .5s ease, flex .5s ease ,color .2s ease ;
     background: #fff;
@@ -404,4 +412,147 @@ padding: 0.5rem;
     @keyframes color-change-2x{
         0%{background:#e5e6e9}
         100%{background:#989debdc}}
+    #imgesdelete{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 0;
+    }
+   
+    #pMidle{
+        line-break: anywhere;
+    }
+#contenerNotif{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: -1px -3px 13px 3px #ec1414;
+    border-radius: 13px;
+    height: 30vh;
     
+    -webkit-animation:color-change-2x 5s linear infinite alternate both;
+    animation:color-change-2x 5s linear infinite alternate both};
+
+
+@-webkit-keyframes color-change-2x{
+    0%{background:#e7ebe7}
+    100%{background:#d2d0d3}}
+    @keyframes color-change-2x{
+        0%{background:#e5e6e9}
+        100%{background:#989debdc}
+
+}
+    #imagenotif{
+        display: flex;
+        align-self: center;
+        height: 11vh;
+        width: 6vw;
+
+
+        -webkit-animation: bounce-in-top 2.5s infinite both;
+                animation: bounce-in-top 2.5s infinite both;
+    
+    } 
+
+    #pnotif{
+        font-size: 1.5em;
+        color: #0c0b0c;
+        -webkit-animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+ 
+
+    }
+    #div2button{
+        display: flex;
+        justify-content:space-evenly;
+    }
+    #sup{
+    
+        border-radius: 10px;
+        background:#444d70 ;
+        color: white;
+padding: 0.7rem;
+        border-left: 6px solid;
+    border-right: 6px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    }
+    #sup:hover{
+        background: white;
+        color: #444d70;
+    }
+    #annul{
+        border-left: 6px solid;
+    border-right: 6px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+        border-radius: 10px;
+        
+        background: #444d70;
+        color: white;
+padding: 0.7rem;
+
+    }
+    #annul:hover{
+        background: white;
+        color: #444d70;
+    }
+
+     
+    
+  @keyframes bounce-in-top {
+    0% {
+      -webkit-transform: translateY(-500px);
+              transform: translateY(-500px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: translateY(-65px);
+              transform: translateY(-65px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: translateY(-28px);
+              transform: translateY(-28px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    90% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
